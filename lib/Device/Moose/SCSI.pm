@@ -3,7 +3,7 @@
 package Device::Moose::SCSI;
 {
     $Device::Moose::SCSI::AUTHORITY = "cpan:potatogim";
-    $Device::Moose::SCSI::VERSION   = "0.10";
+    $Device::Moose::SCSI::VERSION   = "0.11";
 };
 
 use Moose;
@@ -116,8 +116,6 @@ sub execute
     confess "Cannot read from " . $self->name . ": $!" unless (defined($ret));
 
     my @data = unpack("i4 I C16", substr($iobuf, 0, 36));
-
-    print join(" ", @data), "\n";
 
     confess "SCSI I/O error $data[3] on " . $self->name if ($data[3]);
 

@@ -4,7 +4,7 @@
       "potatogim <potatogim@potatogim.net>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "ExtUtils::MakeMaker version 7.04, CPAN::Meta::Converter version 2.143240",
+   "generated_by" : "ExtUtils::MakeMaker version 7.02, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "unknown"
    ],
@@ -32,11 +32,11 @@
       },
       "runtime" : {
          "requires" : {
-            "Device::SCSI" : "1.004",
+            "Moose" : "0",
             "perl" : "5.006"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "0.10"
+   "version" : "0.11"
 }
